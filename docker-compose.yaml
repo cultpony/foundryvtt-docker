@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  foundryvtt:
+    build: .
+    hostname: 'foundryvtt'
+    ports:
+      - 30000:30000
+    volumes:
+      - '$HOME/.local/share/FoundryVTT:/data'
