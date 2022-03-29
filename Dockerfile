@@ -1,4 +1,4 @@
-FROM ubuntu:21.11
+FROM ubuntu:21.10
 
 RUN apt-get update && apt-get install -y unzip curl libssl-dev sudo && curl -sL https://deb.nodesource.com/setup_16.x | bash - && apt-get update && apt-get install -y nodejs && useradd -ms /bin/bash foundryvtt
 RUN mkdir /app && mkdir /data && chown foundryvtt:foundryvtt /app /data
